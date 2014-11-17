@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sergiorojas.prueba.PruebaMainActivity" >
+
+    <TextView
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/tNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tExpo"
+        android:layout_below="@+id/bCalcular"
+        android:layout_marginTop="26dp"
+        android:text="@string/sNota"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/eNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tNota"
+        android:layout_alignLeft="@+id/bCalcular"
+        android:layout_marginLeft="14dp"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+
+    <EditText
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/ePra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eExpo"
+        android:layout_alignLeft="@+id/eProyec"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+
+    <Button
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/bCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eProyec"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="@string/sButton" />
+
+    <TextView
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/tPracti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eExpo"
+        android:layout_toLeftOf="@+id/ePra"
+        android:text="@string/sPractica"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+                                style="@style/textViewStyle"
+        
+        android:id="@+id/eProyec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tExpo"
+        android:layout_alignBottom="@+id/tExpo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:ems="5"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/tProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eProyec"
+        android:layout_alignBottom="@+id/eProyec"
+        android:layout_alignLeft="@+id/tPracti"
+        android:text="@string/sProyecto"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/tExpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eQuiz"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/eExpo"
+        android:text="@string/sExposiciones"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tQuiz"
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tExpo"
+        android:layout_marginTop="29dp"
+        android:text="@string/sQuiz"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/eQuiz"
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tQuiz"
+        android:layout_alignLeft="@+id/eExpo"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/eExpo"
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tExpo"
+        android:layout_alignBottom="@+id/tExpo"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/tProyecto"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+    
+</RelativeLayout>

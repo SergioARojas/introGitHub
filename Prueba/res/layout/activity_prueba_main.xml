@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sergiorojas.prueba.PruebaMainActivity" >
+
+    <EditText
+           style="@style/textViewStyle"
+        
+        android:id="@+id/ePra"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tPracti"
+        android:layout_alignLeft="@+id/eProyec"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/tPracti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tProyecto"
+        android:layout_below="@+id/eExpo"
+        android:layout_marginTop="28dp"
+        android:text="@string/sPractica"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/eExpo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tExpo"
+        android:layout_alignRight="@+id/eProyec"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/tExpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tProyecto"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/sExposiciones"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/tQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tExpo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="76dp"
+        android:text="@string/sQuiz"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/tProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tExpo"
+        android:layout_below="@+id/tQuiz"
+        android:layout_marginTop="18dp"
+        android:text="@string/sProyecto"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+                                style="@style/textViewStyle"
+        
+        android:id="@+id/eQuiz"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tProyecto"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+                                style="@style/textViewStyle"
+        
+        android:id="@+id/eProyec"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tProyecto"
+        android:layout_alignBottom="@+id/tProyecto"
+        android:layout_alignLeft="@+id/eQuiz"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/bCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ePra"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/eNota"
+        android:text="@string/sButton" />
+
+    <EditText
+                                style="@style/textViewStyle"
+        
+        android:id="@+id/eNota"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tNota"
+        android:layout_alignLeft="@+id/ePra"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+                        style="@style/textViewStyle"
+        
+        android:id="@+id/tNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tPracti"
+        android:layout_below="@+id/bCalcular"
+        android:layout_marginTop="46dp"
+        android:text="@string/sNota"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

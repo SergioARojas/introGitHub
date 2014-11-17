@@ -1,0 +1,21 @@
+
+             <resources>
+             
+    <style name="textViewStyle" parent="@android:style/TextAppearance.Medium">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textColor">@color/LightBlue</item>
+    <item name="android:typeface">monospace</item>        
+         
+</style>
+    <style name="AppBaseTheme" parent="android:Theme.Translucent"></style>
+    <style name="tema" parent="AppBaseTheme">
+           <item name="android:windowBackground">@color/Black</item>
+           <item name="android:colorBackground">@color/Red</item>
+           </style>
+           
+        
+  
+   </resources>
+
+               

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Prueba</string>
+	<string name="action_settings">Settings</string>    
+    <string name="sQuiz">Quices</string>
+    <string name="sPractica">Practicas</string>
+    <string name="sProyecto">Proyecto</string>
+    <string name="sExposiciones">Exposiciones</string>
+    <string name="sButton">Calcular</string>
+    <string name="sNota">Nota</string>
+    <string name="sAcercade">Acerca de</string>
+    
+    <string name="sBienv">***Bienvenido a Acerca de***</string>
+    
+    
+    
+
+</resources>
